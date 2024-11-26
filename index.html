@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./logp.png" type="image/icon type">
+    <title>Sweet Dreams</title>
+  
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Georgia', serif;
+        line-height: 1.6;
+        color: #333;
+    }
+    
+    nav {
+        position: fixed;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 5%;
+        background-color: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #c41e3a;
+    }
+    
+    .nav-links a {
+        margin-left: 2rem;
+        text-decoration: none;
+        color: #850404;
+        font-weight: 500;
+        transition: color 0.3s;
+    }
+    
+    .nav-links a:hover {
+        color: #c41e3a;
+    }
+    
+    .hero {
+        height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                    url('./back.jpg') center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white(130, 75, 75);
+    }
+    
+    .hero-content {
+        padding: 3rem;
+        color: white;
+        
+    }
+    
+    .hero h1 {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .cta-button {
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+        background-color: #c41e3a;
+        color: rgb(228, 221, 221);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        
+    }
+    .cta-button a{
+        text-decoration: none;
+        color: aliceblue;
+    }
+    .cta-button:hover {
+        background-color: #a01830;
+    }
+    
+    section {
+        padding: 5rem 10%;
+    }
+    
+    h2 {
+        text-align: center;
+        margin-bottom: 3rem;
+        font-size: 2.5rem;
+        color: #c41e3a;
+    }
+    
+    .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+    }
+    
+    .menu-item {
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+    }
+    
+    .menu-item:hover {
+        transform: translateY(-5px);
+    }
+    
+    .menu-item h3 {
+        color: #c41e3a;
+        margin-bottom: 1rem;
+    }
+    
+    .price {
+        display: block;
+        margin-top: 1rem;
+        font-weight: bold;
+        color: #c41e3a;
+    }
+    
+    .about {
+        background-color: #f9f9f9;
+    }
+    
+    .about p {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    
+    .contact {
+        background-color: white;
+    }
+    
+    .contact-info {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .hours {
+        margin-top: 2rem;
+        padding-top: 2rem;
+        border-top: 1px solid #ddd;
+    }
+    
+    footer {
+        text-align: center;
+        padding: 2rem;
+        background-color: #333;
+        color: white;
+    }
+    
+    
+   </style>
+
+</head>
+<body>
+    <nav>
+        <div class="logo">"SWEET DREAMS"</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 style="color:#ddd;"> Welcome to Sweet Dreams Cafe and Restaurant</h1>
+            <p>Experience with "BOHO THEME" in a cozy atmosphere</p>
+            <button class="cta-button"><a href="./book.html">Make a Reservation</a></button>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <h2>Our Specialties</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <h3>Fish Fry</h3>
+                <p>Fresh vatki fish</p>
+                <span class="price">250</span>
+            </div>
+            <div class="menu-item">
+                <h3>chicken Cutlet</h3>
+                <p>Fresh Chhicken</p>
+                <span class="price">350</span>
+            </div>
+            <div class="menu-item">
+                <h3>chicken Roll</h3>
+                <p>Fresh Chhicken</p>
+                <span class="price">320</span>
+            </div>
+            <div class="menu-item">
+                <h3>paneer Roll</h3>
+                <p>Fresh Chhicken</p>
+                <span class="price">320</span>
+            </div>
+            <div class="menu-item">
+                <h3>Chicken Biriyani</h3>
+                <p>India gate rice with eggs, potato, fresh chicken</p>
+                <span class="price">250</span>
+            </div>
+            <div class="menu-item">
+                <h3>Mixed Fried Rice</h3>
+                <p>Fresh vegatable, rice,egg,porn,chicken</p>
+                <span class="price">220</span>
+            </div>
+            <div class="menu-item">
+                <h3>Mutton Biriyani</h3>
+                <p>Fresh mutton,rice with egg and potato</p>
+                <span class="price">380</span>
+            </div>
+            <div class="menu-item">
+                <h3>Chili Chicken</h3>
+                <p>Fresh chicken and various sauce</p>
+                <span class="price">230</span>
+            </div>
+            <div class="menu-item">
+                <h3>Ghicken kosha</h3>
+                <p> Fresh chicken</p>
+                <span class="price">350</span>
+            </div>
+            <div class="menu-item">
+                <h3>Ghicken Chowmin</h3>
+                <p> Fresh chicken,chowmin,egg</p>
+                <span class="price">200</span>
+            </div>
+            <div class="menu-item">
+                <h3>Ghicken Pasta</h3>
+                <p> Fresh chicken,pasta,egg</p>
+                <span class="price">220</span>
+            </div>
+            <div class="menu-item">
+                <h3>White sauce Pasta</h3>
+                <p>Milk,butter,flour,pasta</p>
+                <span class="price">350</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>Our Story</h2>
+        <p>Founded in 2000, "SWEET DREAMS" brings the heart of Indian
+            cooking to your table. Our recipes have been passed down through generations, maintaining the authentic flavors of Indian and chinese.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Visit Us</h2>
+        <div class="contact-info">
+            <p>123  Street, Parkstreet,kolkata</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Pin :743400</p>
+            <p>Email: info@Sweet Dreems.com</p>
+            <p>Instagram :"SWEET DREAMS"_06</p>
+            <div class="hours">
+                <p>Mon-Thu: 11am-10pm</p>
+                <p>Fri-Sat: 11am-11pm</p>
+                <p>Sun: 12pm-9pm(flat 50% Discount on 12pm-2pm )</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SWEET DREAMS. All rights reserved.</p>
+    </footer>
+</body>
+</html>
